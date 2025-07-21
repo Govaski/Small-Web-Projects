@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Itens</title>
+</head>
+<body>
+    <div>
+        <h1>Lista de Compras</h1>
+
+        <form id="form-add">
+            <input id="input-item" type="text" placeholder="Insira seu item">
+            <button id="btn-add" type="submit" class="BtnAdd">Adicionar</button>
+            <button id="btn-clear" class="BtnClear">Limpar</button>
+        </form>
+
+        <select id="order">
+            <optgroup label="Ordem">
+                <option value="insertion">Inserção</option>
+                <option value="alphabet">Alfabetica</option>
+                <option value="status">Status</option>
+            </optgroup>
+        </select>
+
+        <select id="filter">
+            <optgroup label="Filtro">
+                <option value="all">Todos</option>
+                <option value="bought">Comprados</option>
+                <option value="pendent">Pendentes</option>
+            </optgroup>
+        </select>
+        
+        <div class="label-container">
+            <label>Item</label>
+            <label>Comprado</label>
+            <label>Remover</label>
+        </div>
+        <ul id="item-list">
+        </ul>
+    </div>
+
+    <p id="item-qtd">Items: </p>
+
+    <script src="app.js"></script>
+</body>
+</html>
